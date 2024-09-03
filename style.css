@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'digital';
+    src: url('/digital-7.regular.ttf') format('truetype');
+}
+
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(rgb(142, 139, 139), rgb(2, 2, 22));
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.main__outer {
+    background: radial-gradient(circle, #b2bfc2 50%, rgb(5, 4, 4) 120%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    width: 500px;
+    border-radius: 70px;
+    border: #2526275f 5px solid;
+    box-shadow: 0px -8px 10px 11px rgba(12, 12, 12, 0.69);
+}
+
+.main__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #cad5d7;
+    outline: 3px solid rgba(156, 156, 156, 0.082);
+    outline-offset: 0px;
+    margin-top: 25px;
+    height: 630px;
+    width: 440px;
+    border-radius: 40px;
+    box-shadow: inset 0px 0px 2px 1px #6c7374, 0px 0px 12px 4px #6c7678;;
+}
+
+.main__interface {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: right;
+    align-items: center;
+    border-radius: 15px;
+    border-left: 5px solid rgb(73, 91, 120);
+    border-top: 3px solid rgb(73, 91, 120);
+    box-shadow: inset -1px 3px 3px 3px rgb(73, 91, 120);
+    background-color: #c4c4e2;
+    font-size: 45px;
+    font-weight:bold;
+    font-family:'digital';
+    width: 380px;
+    height: 120px;
+    padding: 20px;
+    margin-top: 70px;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+
+.main__numpad {
+    margin-top: 50px;
+}
+
+.main__nums {
+    height: 320px;
+    width: 370px;
+    display: grid;
+    grid-row-gap: 10px;
+    grid-column-gap: 16px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.main__nums > * {
+    border-radius: 10px;
+    box-shadow: inset -1px 1px 5px 2px #8f989a, 2px 5px 12px 0px #595c5e, inset 5px 5px 9px 4px rgba(203, 200, 200, 0.55);
+    background: #bcc8ca;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'digital';
+    color: rgb(55, 55, 55);
+    cursor: pointer;
+}
+
+.main__nums>*:active {
+    background: #707576;
+    box-shadow: inset -1px 3px 8px 5px #7d8486, 1px 3px 3px 0px #5c5f60, inset 5px 5px 9px 4px rgba(132, 128, 128, 0.55);
+    margin-top: 2px;
+}
+
+
+
+
+
+#btn-equal,#btn-back,#btn-erase {
+    box-shadow: inset -1px 3px 8px 1px #7b818c, 2px 5px 12px 0px #61636e, inset 5px 5px 9px 4px rgba(183, 186, 189, 0.55);
+    background-color: #a9a9f5;
+}
+#btn-equal:active, #btn-back:active, #btn-erase:active {
+    background-color: #8787c0;
+    box-shadow: inset -1px 3px 8px 5px #7d8486, 1px 3px 3px 0px #5c5f60, inset 5px 5px 9px 4px rgba(132, 128, 128, 0.55);
+}
