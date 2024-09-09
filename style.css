@@ -65,7 +65,25 @@ main {
     margin-top: 70px;
     overflow-x: auto;
     overflow-y: hidden;
+    white-space: nowrap;
 }
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: rgba(174, 174, 174, 0);
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #88888850;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #55555589;
+  }
+
 
 
 .main__numpad {
